@@ -1,14 +1,13 @@
 package com.jaiganesh.simpleSpringBootApp.books;
 
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-
-
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
+@Entity
 public class Booklist {
 
+	@Id
 	private String bookName;
 	private String Author;
 	private String Genre;
